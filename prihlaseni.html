@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Přihlášení</title>
+</head>
+<body>
+   
+<nav class="navbar navbar-expand-lg bg-black navbar-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav d-flex align-items-center">
+        <li class="nav-item fs-3">
+          <a class="nav-link active" href="index.html"><i class="fas fa-house"></i> Mezinárodní kuchyně</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recept.html">Recepty</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="kategorieDropdown" role="button" data-bs-toggle="dropdown"><i class="fas fa-list"></i> Kategorie</a>
+        <ul class="dropdown-menu bg-black" aria-labelledby="kategorieDropdown">
+          <li><a class="dropdown-item" href="#">Předkrmy</a></li>
+          <li><a class="dropdown-item" href="#">Hlavní jídla</a></li>
+          <li><a class="dropdown-item" href="#">Dezerty</a></li>
+          <li><a class="dropdown-item" href="#">Polévky</a></li>
+        </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="o-nas.html"><i class="fas fa-circle-info"></i> O nás</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html"><i class="fas fa-phone"></i> Kontakt</a>
+          </li>
+        </ul>
+          <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link active" href="prihlaseni.html">
+            <i class="fas fa-sign-in-alt"></i> Přihlášení
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="registrace.html">
+            <i class="fas fa-user-plus"></i> Registrace
+            </a>
+        </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:30%">Prozkoumáno procent světové kuchyně: 30%</div>
+</div>
+
+<h1 class="container-fluid mt-3 mx-auto text-center mb-4">Přihlášení</h1>
+<div class="container">
+  <p class="text-center">Pro přihlášení zadejte své uživatelské jméno a heslo.</p>
+    <form>
+      <div class="mb-3">
+        <i class="fas fa-user"></i>
+            <label for="login" class="form-label">Vaše jméno:</label>
+            <input type="text" required class="form-control" id="name" placeholder="Zadejte své uživatelské jméno">
+      </div>
+      <div class="mb-3">
+        <i class="fas fa-lock"></i>
+          <label for="heslo" class="form-label">Vaše heslo:</label>
+          <input type="text" required class="form-control" id="heslo" placeholder="Zadejte své heslo">
+      </div>
+      <button type="submit" class="btn btn-success">Přihlásit se</button>
+    </form>
+</div>
+
+</body>
+</html>

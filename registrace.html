@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/flag-icons/css/flag-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Registruj se!</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-black navbar-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav d-flex align-items-center">
+        <li class="nav-item fs-3">
+          <a class="nav-link active" href="index.html"><i class="fas fa-house"></i> Mezinárodní kuchyně</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="recept.html"><i class="fas fa-receipt"></i> Recepty</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="kategorieDropdown" role="button" data-bs-toggle="dropdown"><i class="fas fa-list"></i> Kategorie</a>
+        <ul class="dropdown-menu bg-black" aria-labelledby="kategorieDropdown">
+          <li><a class="dropdown-item" href="#">Předkrmy</a></li>
+          <li><a class="dropdown-item" href="#">Hlavní jídla</a></li>
+          <li><a class="dropdown-item" href="#">Dezerty</a></li>
+          <li><a class="dropdown-item" href="#">Polévky</a></li>
+        </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="o-nas.html"><i class="fas fa-circle-info"></i> O nás</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakt.html"><i class="fas fa-phone"></i> Kontakt</a>
+          </li>
+        </ul>
+          <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="prihlaseni.html">
+            <i class="fas fa-sign-in-alt"></i> Přihlášení
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="registrace.html">
+            <i class="fas fa-user-plus"></i> Registrace
+            </a>
+        </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:30%">Prozkoumáno procent světové kuchyně: 30%</div>
+</div>
+
+<h1 class="container-fluid mt-3 mx-auto text-center mb-4">Registrace</h1>
+<div class="container">
+    <p class="text-center">Vítejte na stránce pro registraci! Zde můžete vytvořit nový účet a začít objevovat světovou kuchyni.</p>
+  <form class="form-floating needs-validation" novalidate>
+    <div class="form-floating mb-3">
+          <input type="text" required class="form-control" id="login" placeholder="Uživatelské jméno">
+          <label for="login"><i class="fas fa-user"></i> Uživatelské jméno:</label>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Prosím vyplňte toto pole.</div>
+    </div>
+    <div class="form-floating mb-3">
+          <input type="password" required class="form-control" id="heslo1" placeholder="Zadejte své heslo">
+          <label for="heslo1" class="form-label"><i class="fas fa-lock"></i> Vaše heslo:</label>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Prosím vyplňte toto pole.</div>
+    </div>
+    <div class="form-floating mb-3">
+          <input type="password" required class="form-control" id="heslo2" placeholder="Zadejte znovu své heslo">
+          <label for="heslo2" class="form-label"><i class="fas fa-lock"></i> Vaše heslo znovu:</label>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback" id="hesla-nesouhlasi">Hesla se musí shodovat.</div>
+    </div>
+    <div class="form-floating mb-3">
+          <input type="text" required class="form-control" id="jmeno" placeholder="Jméno">
+          <label for="jmeno"><i class="fas fa-user"></i> Jméno:</label>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Prosím vyplňte toto pole.</div>
+    </div>
+    <div class="form-floating mb-3">
+          <input type="text" required class="form-control" id="prijimeni" placeholder="Přijímení">
+          <label for="prijimeni"><i class="fas fa-signature"></i> Přijímení:</label>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Prosím vyplňte toto pole.</div>
+    </div>
+    <div class="form-floating mb-3">
+          <input type="email" required class="form-control" id="email" placeholder="Email">
+          <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Prosím vyplňte toto pole.</div>
+    </div>
+    <div class="form-floating mb-3">
+            <select class="form-select" required id="registrace">
+            <option value="" selected disabled>-- Vyberte stát --</option>
+            <option value="cz">Česko</option>
+            <option value="sk">Slovensko</option>
+            <option value="de">Německo</option>
+            <option value="fr">Francie</option>
+            <option value="it">Itálie</option>
+            <option value="es">Španělsko</option>
+            <option value="us">USA</option>
+            <option value="jp">Japonsko</option>
+            <option value="cn">Čína</option>
+            <option value="in">Indie</option>
+            </select>
+            <label for="registrace"><i class="fas fa-flag"></i> Stát</label>
+        </div>
+    <button type="submit" class="btn btn-success">Registrovat se</button>
+  </form>
+</div>
+
+<script>
+  // Aktivace Bootstrap validace formuláře
+  (() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+</script>
+
+<script>
+  (() => {
+    'use strict';
+
+    const forms = document.querySelectorAll('.needs-validation');
+
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        const heslo1 = document.getElementById('heslo1');
+        const heslo2 = document.getElementById('heslo2');
+
+        // kontrola shody hesel
+        if (heslo1.value !== heslo2.value) {
+          heslo2.setCustomValidity("Hesla se neshodují");
+          document.getElementById('hesla-nesouhlasi').style.display = "block";
+        } else {
+          heslo2.setCustomValidity("");
+          document.getElementById('hesla-nesouhlasi').style.display = "none";
+        }
+
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+</script>
+
+</body>
+</html>
