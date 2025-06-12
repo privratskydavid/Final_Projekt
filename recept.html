@@ -27,10 +27,10 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="kategorieDropdown" role="button" data-bs-toggle="dropdown"><i class="fas fa-list"></i> Kategorie</a>
         <ul class="dropdown-menu bg-black" aria-labelledby="kategorieDropdown">
-          <li><a class="dropdown-item" href="#">Předkrmy</a></li>
-          <li><a class="dropdown-item" href="#">Hlavní jídla</a></li>
-          <li><a class="dropdown-item" href="#">Dezerty</a></li>
-          <li><a class="dropdown-item" href="#">Polévky</a></li>
+          <li><a class="dropdown-item" href="#predkrmy">Předkrmy</a></li>
+          <li><a class="dropdown-item" href="#hlavni">Hlavní jídla</a></li>
+          <li><a class="dropdown-item" href="#dezerty">Dezerty</a></li>
+          <li><a class="dropdown-item" href="#polevky">Polévky</a></li>
         </ul>
         </li>
           <li class="nav-item">
@@ -57,8 +57,9 @@
 </nav>
 
 <main>
-<h1 class="mb-4">Recepty podle kategorií</h1>
+<h1 class="container-fluid mt-3 mx-auto text-center mb-4">Recepty podle kategorií</h1>
 
+<div class="container">
 <ul class="nav nav-tabs" id="receptTabs" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#predkrmy">Předkrmy</button>
@@ -69,7 +70,164 @@
   <li class="nav-item" role="presentation">
     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#dezerty">Dezerty</button>
   </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#polevky">Polévky</button>
+  </li>
+
 </ul>
+
+
+<div class="tab-content mt-3">
+
+  <!-- Předkrmy -->
+  <div class="tab-pane fade show active" id="predkrmy">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="images/bruschetta.jpg" class="card-img-top" alt="Bruschetta">
+          <div class="card-body">
+            <h5 class="card-title">Bruschetta</h5>
+            <p><span class="flag-icon flag-icon-it"></span> Itálie</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <img src="images/spingrolls.jpg" class="card-img-top" alt="Spring Rolls">
+          <div class="card-body">
+            <h5 class="card-title">Spring Rolls</h5>
+            <p><span class="flag-icon flag-icon-vn"></span> Vietnam</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Tapenade</h5>
+            <p><span class="flag-icon flag-icon-fr"></span> Francie</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Gazpacho</h5>
+            <p><span class="flag-icon flag-icon-es"></span> Španělsko</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Edamame</h5>
+            <p><span class="flag-icon flag-icon-jp"></span> Japonsko</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <h5 class="card-title">Ceviche</h5>
+            <p><span class="flag-icon flag-icon-pe"></span> Peru</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="mt-4">Přehled předkrmů</h3>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Název</th>
+          <th>Země</th>
+          <th>Hodnocení</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Bruschetta</td><td><span class="flag-icon flag-icon-it"></span> Itálie</td><td>★★★★☆</td></tr>
+        <tr><td>Spring Rolls</td><td><span class="flag-icon flag-icon-vn"></span> Vietnam</td><td>★★★★★</td></tr>
+        <tr><td>Tapenade</td><td><span class="flag-icon flag-icon-fr"></span> Francie</td><td>★★★☆☆</td></tr>
+        <tr><td>Gazpacho</td><td><span class="flag-icon flag-icon-es"></span> Španělsko</td><td>★★★★☆</td></tr>
+        <tr><td>Edamame</td><td><span class="flag-icon flag-icon-jp"></span> Japonsko</td><td>★★★☆☆</td></tr>
+        <tr><td>Ceviche</td><td><span class="flag-icon flag-icon-pe"></span> Peru</td><td>★★★★★</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Hlavní jídla -->
+  <div class="tab-pane fade" id="hlavni">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Sushi</h5><p><span class="flag-icon flag-icon-jp"></span> Japonsko</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Pizza</h5><p><span class="flag-icon flag-icon-it"></span> Itálie</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Guláš</h5><p><span class="flag-icon flag-icon-cz"></span> Česko</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Paella</h5><p><span class="flag-icon flag-icon-es"></span> Španělsko</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Tikka Masala</h5><p><span class="flag-icon flag-icon-in"></span> Indie</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Tacos</h5><p><span class="flag-icon flag-icon-mx"></span> Mexiko</p></div></div></div>
+    </div>
+    <h3 class="mt-4">Přehled hlavních jídel</h3>
+    <table class="table table-bordered">
+      <thead><tr><th>Název</th><th>Země</th><th>Hodnocení</th></tr></thead>
+      <tbody>
+        <tr><td>Sushi</td><td><span class="flag-icon flag-icon-jp"></span> Japonsko</td><td>★★★★★</td></tr>
+        <tr><td>Pizza</td><td><span class="flag-icon flag-icon-it"></span> Itálie</td><td>★★★★☆</td></tr>
+        <tr><td>Guláš</td><td><span class="flag-icon flag-icon-cz"></span> Česko</td><td>★★★★☆</td></tr>
+        <tr><td>Paella</td><td><span class="flag-icon flag-icon-es"></span> Španělsko</td><td>★★★☆☆</td></tr>
+        <tr><td>Tikka Masala</td><td><span class="flag-icon flag-icon-in"></span> Indie</td><td>★★★★★</td></tr>
+        <tr><td>Tacos</td><td><span class="flag-icon flag-icon-mx"></span> Mexiko</td><td>★★★★☆</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Dezerty -->
+  <div class="tab-pane fade" id="dezerty">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Tiramisu</h5><p><span class="flag-icon flag-icon-it"></span> Itálie</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Mochi</h5><p><span class="flag-icon flag-icon-jp"></span> Japonsko</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Crème brûlée</h5><p><span class="flag-icon flag-icon-fr"></span> Francie</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Churros</h5><p><span class="flag-icon flag-icon-es"></span> Španělsko</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Baklava</h5><p><span class="flag-icon flag-icon-tr"></span> Turecko</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Koláč</h5><p><span class="flag-icon flag-icon-cz"></span> Česko</p></div></div></div>
+    </div>
+    <h3 class="mt-4">Přehled dezertů</h3>
+    <table class="table table-bordered">
+      <thead><tr><th>Název</th><th>Země</th><th>Hodnocení</th></tr></thead>
+      <tbody>
+        <tr><td>Tiramisu</td><td><span class="flag-icon flag-icon-it"></span> Itálie</td><td>★★★★★</td></tr>
+        <tr><td>Mochi</td><td><span class="flag-icon flag-icon-jp"></span> Japonsko</td><td>★★★★☆</td></tr>
+        <tr><td>Crème brûlée</td><td><span class="flag-icon flag-icon-fr"></span> Francie</td><td>★★★★★</td></tr>
+        <tr><td>Churros</td><td><span class="flag-icon flag-icon-es"></span> Španělsko</td><td>★★★☆☆</td></tr>
+        <tr><td>Baklava</td><td><span class="flag-icon flag-icon-tr"></span> Turecko</td><td>★★★★★</td></tr>
+        <tr><td>Koláč</td><td><span class="flag-icon flag-icon-cz"></span> Česko</td><td>★★★★☆</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Polévky -->
+  <div class="tab-pane fade" id="polevky">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Pho</h5><p><span class="flag-icon flag-icon-vn"></span> Vietnam</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Tom Yum</h5><p><span class="flag-icon flag-icon-th"></span> Thajsko</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Boršč</h5><p><span class="flag-icon flag-icon-ua"></span> Ukrajina</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Ramen</h5><p><span class="flag-icon flag-icon-jp"></span> Japonsko</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Minestrone</h5><p><span class="flag-icon flag-icon-it"></span> Itálie</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Kulajda</h5><p><span class="flag-icon flag-icon-cz"></span> Česko</p></div></div></div>
+    </div>
+    <h3 class="mt-4">Přehled polévek</h3>
+    <table class="table table-bordered">
+      <thead><tr><th>Název</th><th>Země</th><th>Hodnocení</th></tr></thead>
+      <tbody>
+        <tr><td>Pho</td><td><span class="flag-icon flag-icon-vn"></span> Vietnam</td><td>★★★★★</td></tr>
+        <tr><td>Tom Yum</td><td><span class="flag-icon flag-icon-th"></span> Thajsko</td><td>★★★★☆</td></tr>
+        <tr><td>Boršč</td><td><span class="flag-icon flag-icon-ua"></span> Ukrajina</td><td>★★★☆☆</td></tr>
+        <tr><td>Ramen</td><td><span class="flag-icon flag-icon-jp"></span> Japonsko</td><td>★★★★★</td></tr>
+        <tr><td>Minestrone</td><td><span class="flag-icon flag-icon-it"></span> Itálie</td><td>★★★★☆</td></tr>
+        <tr><td>Kulajda</td><td><span class="flag-icon flag-icon-cz"></span> Česko</td><td>★★★☆☆</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
 
 <div class="tab-content mt-3">
   <div class="tab-pane fade show active" id="predkrmy">
@@ -81,39 +239,81 @@
   <div class="tab-pane fade" id="dezerty">
     <p>Seznam dezertů zde…</p>
   </div>
+  <div class="tab-pane fade" id="polevky">
+  <p>Seznam polévek zde…</p>
 </div>
-
-
-<h2 class="mt-5">Tabulka oblíbenosti</h2>
-<table class="table table-striped table-bordered">
-  <thead class="table-dark">
-    <tr>
-      <th>Název</th>
-      <th>Země původu</th>
-      <th>Oblíbenost</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sushi</td>
-      <td><span class="flag-icon flag-icon-jp"></span> Japonsko</td>
-      <td>★★★★★</td>
-    </tr>
-    <tr>
-      <td>Pizza</td>
-      <td><span class="flag-icon flag-icon-it"></span> Itálie</td>
-      <td>★★★★☆</td>
-    </tr>
-  </tbody>
-</table>
+</div>
 </main>
 
-<footer class="fixed-bottom bg-black text-white text-center py-3 mt-auto">
+<footer class="bg-black text-white text-center py-3 mt-auto">
     <small>
       Světová Kuchyně |
       <a href="dokumentace.pdf" class="text-white text-decoration-underline">Dokumentace (PDF)</a>
     </small>
   </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Získat hash z URL (např. "#dezerty")
+    const hash = window.location.hash;
+
+    if (hash) {
+      const tabTrigger = document.querySelector(`button[data-bs-target="${hash}"]`);
+      if (tabTrigger) {
+        const tab = new bootstrap.Tab(tabTrigger);
+        tab.show();
+      }
+    }
+
+    // Lokální přepínání z dropdownu bez reloadu
+    document.querySelectorAll('.dropdown-item').forEach(function (item) {
+      item.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+
+        // Pokud odkaz míří na tuto stránku (např. jen #dezerty), přepnout bez reloadu
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const tabTrigger = document.querySelector(`button[data-bs-target="${href}"]`);
+          if (tabTrigger) {
+            const tab = new bootstrap.Tab(tabTrigger);
+            tab.show();
+            history.replaceState(null, null, href); // aktualizuj hash
+          }
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hash = window.location.hash;
+
+    // Pokud je hash v URL, aktivuj tab
+    if (hash) {
+      const triggerEl = document.querySelector(`button[data-bs-target="${hash}"]`);
+      if (triggerEl) {
+        const tab = new bootstrap.Tab(triggerEl);
+        tab.show();
+      }
+    }
+
+    // Přepínání tabů při kliknutí v dropdownu
+    document.querySelectorAll('.dropdown-item').forEach(function (item) {
+      item.addEventListener('click', function (e) {
+        e.preventDefault(); // Zabraň přesměrování
+        const target = this.getAttribute('href');
+        const tabTrigger = document.querySelector(`button[data-bs-target="${target}"]`);
+        if (tabTrigger) {
+          const tab = new bootstrap.Tab(tabTrigger);
+          tab.show();
+          // Aktualizuj URL hash
+          history.replaceState(null, null, target);
+        }
+      });
+    });
+  });
+</script>
 
 </body>
 </html>

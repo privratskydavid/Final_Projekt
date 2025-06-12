@@ -27,10 +27,10 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="kategorieDropdown" role="button" data-bs-toggle="dropdown"><i class="fas fa-list"></i> Kategorie</a>
         <ul class="dropdown-menu bg-black" aria-labelledby="kategorieDropdown">
-          <li><a class="dropdown-item" href="#">Předkrmy</a></li>
-          <li><a class="dropdown-item" href="#">Hlavní jídla</a></li>
-          <li><a class="dropdown-item" href="#">Dezerty</a></li>
-          <li><a class="dropdown-item" href="#">Polévky</a></li>
+          <li><a class="dropdown-item" href="recept.html#predkrmy">Předkrmy</a></li>
+          <li><a class="dropdown-item" href="recept.html#hlavni">Hlavní jídla</a></li>
+          <li><a class="dropdown-item" href="recept.html#dezerty">Dezerty</a></li>
+          <li><a class="dropdown-item" href="recept.html#polevky">Polévky</a></li>
         </ul>
         </li>
           <li class="nav-item">
@@ -59,15 +59,70 @@
 
 <main class="container-fluid flex-grow-1">
   <h1 class="container-fluid mt-3 mx-auto text-center mb-4">Progress</h1>
-<div class="progress mt-3" style="height:30px">
-    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger fs-4" style="width:30%">30%</div>
-</div>
-<p class="m-1 fs-4">10.6.2025</p>
 
-<div class="progress mt-3" style="height:30px">
-    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning fs-4" style="width:60%">60%</div>
+  <div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="btn bg-black text-light" data-bs-toggle="collapse" href="#collapseOne">
+        Fáze 1 (10.6.2025)
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+      <div class="card-body">
+        <p class="mx-3 fs-5">Začátek</p>
+        <div class="progress m-3" style="height:20px">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger fs-6" style="width:1%">1%</div>
+  </div>
+  <p class="mx-3 fs-5">Pokračování</p>
+        <div class="progress m-3" style="height:20px">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger fs-6" style="width:30%">30%</div>
+  </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn bg-black text-light" data-bs-toggle="collapse" href="#collapseTwo">
+        Fáze 2 (11.6.2025)
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        <p class="mx-3 fs-5">Začátek</p>
+        <div class="progress m-3" style="height:20px">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger fs-6" style="width:30%">30%</div>
+  </div>
+  <p class="mx-3 fs-5">Pokračování</p>
+        <div class="progress m-3" style="height:20px">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning fs-6" style="width:60%">60%</div>
+  </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn bg-black text-light" data-bs-toggle="collapse" href="#collapseThree">
+        Fáze 3 (12.6.2025)
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        <p class="mx-3 fs-5">Začátek</p>
+        <div class="progress m-3" style="height:20px">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning fs-6" style="width:60%">60%</div>
+  </div>
+  <p class="mx-3 fs-5">Konec</p>
+        <div class="progress m-3" style="height:20px">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning fs-6" style="width:80%">80%</div>
+  </div>
+      </div>
+    </div>
+  </div>
+
 </div>
-<p class="m-1 fs-4">11.6.2025</p>
 </main>
 
 <footer class="fixed-bottom bg-black text-white text-center py-3 mt-auto">
