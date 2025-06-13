@@ -10,6 +10,15 @@
     <title>Recepty</title>
 </head>
 <body>
+
+  <style>
+    .card:hover {
+      transform: scale(1.02);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+  </style>
     
 <nav class="navbar navbar-expand-lg bg-black navbar-dark" data-bs-theme="dark">
   <div class="container-fluid">
@@ -79,15 +88,17 @@
 
 <div class="tab-content mt-3">
 
-  <!-- Předkrmy -->
   <div class="tab-pane fade show active" id="predkrmy">
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100 text-center">
-          <img src="images/bruschetta.jpg" class="card-img-top" alt="Bruschetta">
+          <img src="images/bruschetta2.jpg" class="card-img-top" alt="Bruschetta">
           <div class="card-body">
             <h5 class="card-title">Bruschetta</h5>
-            <p><span class="flag-icon flag-icon-it"></span> Itálie</p>
+            <p><span class="fi fi-it"></span> Itálie</p>
+                1. Opečte plátky bagety.<br>
+                2. Potřete česnekem a pokapejte olivovým olejem.<br>
+                3. Navrch dejte rajčata s bazalkou.
           </div>
         </div>
       </div>
@@ -96,47 +107,66 @@
           <img src="images/spingrolls.jpg" class="card-img-top" alt="Spring Rolls">
           <div class="card-body">
             <h5 class="card-title">Spring Rolls</h5>
-            <p><span class="flag-icon flag-icon-vn"></span> Vietnam</p>
-          </div>
-        </div>
+            <p><span class="fi fi-vn"></span> Vietnam</p>
+                  1. Nakrájejte brambory a cibuli, osmažte je.<br>
+                  2. Smíchejte s vejci.<br>
+                  3. Smažte na pánvi dozlatova.
+              </div>
+            </div>
       </div>
       <div class="col">
         <div class="card h-100 text-center">
+          <img src="images/tapenade.jpg" class="card-img-top" alt="Tapenade">
           <div class="card-body">
             <h5 class="card-title">Tapenade</h5>
-            <p><span class="flag-icon flag-icon-fr"></span> Francie</p>
+            <p><span class="fi fi-fr"></span> Francie</p>
+                1. Rozmixujte černé olivy, kapary, ančovičky a česnek.<br>
+                2. Přidejte olivový olej a citronovou šťávu.<br>
+                3. Podávejte s pečivem jako pomazánku.
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100 text-center">
+          <img src="images/tapas2.jpg" class="card-img-top" alt="Tapas">
           <div class="card-body">
-            <h5 class="card-title">Gazpacho</h5>
-            <p><span class="flag-icon flag-icon-es"></span> Španělsko</p>
+            <h5 class="card-title">Tapas</h5>
+            <p><span class="fi fi-es"></span> Španělsko</p>
+                1. Vyberte různé malé pokrmy – např. olivy, sýry, chorizo, krevety.<br>
+                2. Připravte je jednoduše (grilování, smažení, nakládání).<br>
+                3. Naservírujte na malé talířky jako chuťovky.
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100 text-center">
+          <img src="images/edamame.webp" class="card-img-top" alt="Edamame">
           <div class="card-body">
             <h5 class="card-title">Edamame</h5>
-            <p><span class="flag-icon flag-icon-jp"></span> Japonsko</p>
+            <p><span class="fi fi-jp"></span> Japonsko</p>
+                1. Povařte edamame lusky v osolené vodě asi 5 minut.<br>
+                2. Sceďte a ihned posolte nebo přidejte sezamový olej.<br>
+                3. Podávejte teplé nebo vlažné jako snack.
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100 text-center">
+          <img src="images/ceviche.jpg" class="card-img-top" alt="Ceviche">
           <div class="card-body">
             <h5 class="card-title">Ceviche</h5>
-            <p><span class="flag-icon flag-icon-pe"></span> Peru</p>
+            <p><span class="fi fi-pe"></span> Peru</p>
+                  1. Nakrájejte čerstvou rybu na kostičky.<br>
+                  2. Zalejte limetkovou šťávou a nechte marinovat 15–30 minut.<br>
+                  3. Přidejte cibuli, koriandr, chilli a podávejte vychlazené.
           </div>
         </div>
       </div>
     </div>
 
     <h3 class="mt-4">Přehled předkrmů</h3>
-    <table class="table table-bordered">
-      <thead>
+    <table class="table table-bordered table table-responsive table-striped" style="border: 1px solid black">
+      <thead class="table-dark">
         <tr>
           <th>Název</th>
           <th>Země</th>
@@ -144,105 +174,135 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>Bruschetta</td><td><span class="flag-icon flag-icon-it"></span> Itálie</td><td>★★★★☆</td></tr>
-        <tr><td>Spring Rolls</td><td><span class="flag-icon flag-icon-vn"></span> Vietnam</td><td>★★★★★</td></tr>
-        <tr><td>Tapenade</td><td><span class="flag-icon flag-icon-fr"></span> Francie</td><td>★★★☆☆</td></tr>
-        <tr><td>Gazpacho</td><td><span class="flag-icon flag-icon-es"></span> Španělsko</td><td>★★★★☆</td></tr>
-        <tr><td>Edamame</td><td><span class="flag-icon flag-icon-jp"></span> Japonsko</td><td>★★★☆☆</td></tr>
-        <tr><td>Ceviche</td><td><span class="flag-icon flag-icon-pe"></span> Peru</td><td>★★★★★</td></tr>
+        <tr><td>Bruschetta</td><td><span class="fi fi-it"></span> Itálie</td><td>★★★★☆</td></tr>
+        <tr><td>Spring Rolls</td><td><span class="fi fi-vn"></span> Vietnam</td><td>★★★★★</td></tr>
+        <tr><td>Tapenade</td><td><span class="fi fi-fr"></span> Francie</td><td>★★★☆☆</td></tr>
+        <tr><td>Gazpacho</td><td><span class="fi fi-es"></span> Španělsko</td><td>★★★★☆</td></tr>
+        <tr><td>Edamame</td><td><span class="fi fi-jp"></span> Japonsko</td><td>★★★☆☆</td></tr>
+        <tr><td>Ceviche</td><td><span class="fi fi-pe"></span> Peru</td><td>★★★★★</td></tr>
       </tbody>
     </table>
   </div>
 
-  <!-- Hlavní jídla -->
   <div class="tab-pane fade" id="hlavni">
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Sushi</h5><p><span class="flag-icon flag-icon-jp"></span> Japonsko</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Pizza</h5><p><span class="flag-icon flag-icon-it"></span> Itálie</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Guláš</h5><p><span class="flag-icon flag-icon-cz"></span> Česko</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Paella</h5><p><span class="flag-icon flag-icon-es"></span> Španělsko</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Tikka Masala</h5><p><span class="flag-icon flag-icon-in"></span> Indie</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Tacos</h5><p><span class="flag-icon flag-icon-mx"></span> Mexiko</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/sushi.jpg" class="card-img-top" alt="Sushi"><div class="card-body"><h5 class="card-title">Sushi</h5><p><span class="fi fi-jp"></span> Japonsko</p>
+                1. Uvařte rýži na sushi.<br>
+                2. Připravte náplň (např. losos, avokádo).<br>
+                3. Zaviňte do nori řasy a nakrájejte.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/pizza.jpg" class="card-img-top" alt="Pizza"><div class="card-body"><h5 class="card-title">Pizza</h5><p><span class="fi fi-it"></span> Itálie</p>
+                1. Rozválej těsto na tenkou placku.<br>
+                2. Potři rajčatovou omáčkou, přidej sýr a ingredience.<br>
+                3. Peč 10–15 min na 220 °C, dokud těsto nezhnědne.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/guals.jpg" class="card-img-top" alt="Guláš"><div class="card-body"><h5 class="card-title">Guláš</h5><p><span class="fi fi-cz"></span> Česko </p>
+                1. Nakrájejte hovězí maso na kostky.<br>
+                2. Osmahněte cibuli, přidejte maso, opečte ze všech stran.<br>
+                3. Přidejte papriku, rajčatový protlak, vodu, vařte 1,5–2 hodiny.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/paella.jpg" class="card-img-top" alt="Paella"><div class="card-body"><h5 class="card-title">Paella</h5><p><span class="fi fi-es"></span> Španělsko</p>
+                1. Orestujte cibuli, česnek a papriku na oleji.<br>
+                2. Přidejte rýži, šafrán a maso/mořské plody.<br>
+                3. Zalijte vývarem, vařte 20 min bez míchání.
+
+</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/tikkamasala.webp" class="card-img-top" alt="Tikka Masala"><div class="card-body"><h5 class="card-title">Tikka Masala</h5><p><span class="fi fi-in"></span> Indie</p>
+                1. Marinujte kuřecí kousky v jogurtu a koření 1 hodinu.<br>
+                2. Opečte kuře dozlatova.<br>
+                3. Připravte omáčku z rajčat a smetany, přidejte kuře, vařte.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/tacos.jpg" class="card-img-top" alt="Tacos"><div class="card-body"><h5 class="card-title">Tacos</h5><p><span class="fi fi-mx"></span> Mexiko</p>
+                1. Opečte mleté maso s kořením.<br>
+                2. Připravte cibuli, koriandr, limetku, salsu.<br>
+                3. Naplňte tortilly masem a zeleninou, přidejte sýr/guacamole.</div></div></div>
     </div>
     <h3 class="mt-4">Přehled hlavních jídel</h3>
-    <table class="table table-bordered">
-      <thead><tr><th>Název</th><th>Země</th><th>Hodnocení</th></tr></thead>
+    <table class="table table-bordered table table-responsive table-striped" style="border: 1px solid black">
+      <thead class="table-dark"><tr><th>Název</th><th>Země</th><th>Hodnocení</th></tr></thead>
       <tbody>
-        <tr><td>Sushi</td><td><span class="flag-icon flag-icon-jp"></span> Japonsko</td><td>★★★★★</td></tr>
-        <tr><td>Pizza</td><td><span class="flag-icon flag-icon-it"></span> Itálie</td><td>★★★★☆</td></tr>
-        <tr><td>Guláš</td><td><span class="flag-icon flag-icon-cz"></span> Česko</td><td>★★★★☆</td></tr>
-        <tr><td>Paella</td><td><span class="flag-icon flag-icon-es"></span> Španělsko</td><td>★★★☆☆</td></tr>
-        <tr><td>Tikka Masala</td><td><span class="flag-icon flag-icon-in"></span> Indie</td><td>★★★★★</td></tr>
-        <tr><td>Tacos</td><td><span class="flag-icon flag-icon-mx"></span> Mexiko</td><td>★★★★☆</td></tr>
+        <tr><td>Sushi</td><td><span class="fi fi-jp"></span> Japonsko</td><td>★★★★★</td></tr>
+        <tr><td>Pizza</td><td><span class="fi fi-it"></span> Itálie</td><td>★★★★☆</td></tr>
+        <tr><td>Guláš</td><td><span class="fi fi-cz"></span> Česko</td><td>★★★★☆</td></tr>
+        <tr><td>Paella</td><td><span class="fi fi-es"></span> Španělsko</td><td>★★★☆☆</td></tr>
+        <tr><td>Tikka Masala</td><td><span class="fi fi-in"></span> Indie</td><td>★★★★★</td></tr>
+        <tr><td>Tacos</td><td><span class="fi fi-mx"></span> Mexiko</td><td>★★★★☆</td></tr>
       </tbody>
     </table>
   </div>
 
-  <!-- Dezerty -->
   <div class="tab-pane fade" id="dezerty">
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Tiramisu</h5><p><span class="flag-icon flag-icon-it"></span> Itálie</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Mochi</h5><p><span class="flag-icon flag-icon-jp"></span> Japonsko</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Crème brûlée</h5><p><span class="flag-icon flag-icon-fr"></span> Francie</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Churros</h5><p><span class="flag-icon flag-icon-es"></span> Španělsko</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Baklava</h5><p><span class="flag-icon flag-icon-tr"></span> Turecko</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Koláč</h5><p><span class="flag-icon flag-icon-cz"></span> Česko</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/tiramisu.webp" class="card-img-top" alt="Tiramisu"><div class="card-body"><h5 class="card-title">Tiramisu</h5><p><span class="fi fi-it"></span> Itálie</p>
+        1. Smíchejte mascarpone, cukr a vejce.<br>
+        2. Namočte piškoty do kávy a skladejte do vrstvy.<br>
+        3. Přidejte krém, posypte kakaem, dejte vychladit.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/mochi.webp" class="card-img-top" alt="Mochi"><div class="card-body"><h5 class="card-title">Mochi</h5><p><span class="fi fi-jp"></span> Japonsko</p>1. Smíchejte rýžovou mouku s vodou a cukrem.<br>
+                2. Vařte těsto v páře asi 20 minut, dokud nezhoustne.<br>
+                3. Nechte vychladnout, poté tvarujte kuličky.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/cremebrule.webp" class="card-img-top" alt="Crème brûlée"><div class="card-body"><h5 class="card-title">Crème brûlée</h5><p><span class="fi fi-fr"></span> Francie</p>1. Smíchejte smetanu, žloutky a cukr.<br>
+        2. Pečte v zapékací misce ve vodní lázni.<br>
+        3. Posypte cukrem, zkaramelizujte ho hořákem.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/churros.jpg" class="card-img-top" alt="Churros"><div class="card-body"><h5 class="card-title">Churros</h5><p><span class="fi fi-es"></span> Španělsko</p>1. Smíchejte vodu, mouku a cukr, uvařte těsto.<br>
+      2. Vytlačte těsto do oleje a smažte dozlatova.<br>
+      3. Obalte v cukru s skořicí, podávejte s čokoládou.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/baklava.avif" class="card-img-top" alt="Baklava"><div class="card-body"><h5 class="card-title">Baklava</h5><p><span class="fi fi-tr"></span> Turecko</p>1. Pokládejte vrstvy tenkého těsta s nasekanými ořechy.<br>
+            2. Každou vrstvu potřete máslem, pečte do zlatova.<br>
+            3. Polijte sladkým sirupem a nechte nasáknout.
+
+</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/kolac.jpg" class="card-img-top" alt="Koláč"><div class="card-body"><h5 class="card-title">Koláč</h5><p><span class="fi fi-cz"></span> Česko</p>1. Připravte těsto a rozválejte do formy.<br>
+              2. Naplňte ovocem nebo náplní podle chuti.<br>
+              3. Pečte dozlatova, nechte vychladnout.</div></div></div>
     </div>
     <h3 class="mt-4">Přehled dezertů</h3>
-    <table class="table table-bordered">
-      <thead><tr><th>Název</th><th>Země</th><th>Hodnocení</th></tr></thead>
+    <table class="table table-bordered table table-responsive table-striped" style="border: 1px solid black">
+      <thead class="table-dark"><tr><th>Název</th><th>Země</th><th>Hodnocení</th></tr></thead>
       <tbody>
-        <tr><td>Tiramisu</td><td><span class="flag-icon flag-icon-it"></span> Itálie</td><td>★★★★★</td></tr>
-        <tr><td>Mochi</td><td><span class="flag-icon flag-icon-jp"></span> Japonsko</td><td>★★★★☆</td></tr>
-        <tr><td>Crème brûlée</td><td><span class="flag-icon flag-icon-fr"></span> Francie</td><td>★★★★★</td></tr>
-        <tr><td>Churros</td><td><span class="flag-icon flag-icon-es"></span> Španělsko</td><td>★★★☆☆</td></tr>
-        <tr><td>Baklava</td><td><span class="flag-icon flag-icon-tr"></span> Turecko</td><td>★★★★★</td></tr>
-        <tr><td>Koláč</td><td><span class="flag-icon flag-icon-cz"></span> Česko</td><td>★★★★☆</td></tr>
+        <tr><td>Tiramisu</td><td><span class="fi fi-it"></span> Itálie</td><td>★★★★★</td></tr>
+        <tr><td>Mochi</td><td><span class="fi fi-jp"></span> Japonsko</td><td>★★★★☆</td></tr>
+        <tr><td>Crème brûlée</td><td><span class="fi fi-fr"></span> Francie</td><td>★★★★★</td></tr>
+        <tr><td>Churros</td><td><span class="fi fi-es"></span> Španělsko</td><td>★★★☆☆</td></tr>
+        <tr><td>Baklava</td><td><span class="fi fi-tr"></span> Turecko</td><td>★★★★★</td></tr>
+        <tr><td>Koláč</td><td><span class="fi fi-cz"></span> Česko</td><td>★★★★☆</td></tr>
       </tbody>
     </table>
   </div>
 
-  <!-- Polévky -->
   <div class="tab-pane fade" id="polevky">
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Pho</h5><p><span class="flag-icon flag-icon-vn"></span> Vietnam</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Tom Yum</h5><p><span class="flag-icon flag-icon-th"></span> Thajsko</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Boršč</h5><p><span class="flag-icon flag-icon-ua"></span> Ukrajina</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Ramen</h5><p><span class="flag-icon flag-icon-jp"></span> Japonsko</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Minestrone</h5><p><span class="flag-icon flag-icon-it"></span> Itálie</p></div></div></div>
-      <div class="col"><div class="card h-100 text-center"><div class="card-body"><h5 class="card-title">Kulajda</h5><p><span class="flag-icon flag-icon-cz"></span> Česko</p></div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/pho.png" class="card-img-top" alt="Pho"><div class="card-body"><h5 class="card-title">Pho</h5><p><span class="fi fi-vn"></span> Vietnam</p>1. Uvařte vývar z hovězí kosti a koření (skořice, badyán).<br>
+            2. Připravte rýžové nudle, uvařte je zvlášť.<br>
+            3. Do misky dejte nudle, nakrájené maso a zalijte horkým vývarem. Přidejte bylinky a limetku.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/tomyum.jpg" class="card-img-top" alt="Tom Yum"><div class="card-body"><h5 class="card-title">Tom Yum</h5><p><span class="fi fi-th"></span> Thajsko</p>1. Přiveďte do varu vývar s citronovou trávou, galangalem a limetkovými listy.<br>
+                2. Přidejte krevety nebo kuře a houby.<br>
+                3. Dochutťe limetkovou šťávou, rybí omáčkou a chilli.
+</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/borsc.jpg" class="card-img-top" alt="Boršč"><div class="card-body"><h5 class="card-title">Boršč</h5><p><span class="fi fi-ua"></span> Ukrajina</p>1. Uvařte vývar z masa a zeleniny (řepa, zelí, mrkev).<br>
+            2. Přidejte nakrájenou řepu a vařte do měkka.<br>
+            3. Podávejte s kysanou smetanou a čerstvým koprem.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/ramen.avif" class="card-img-top" alt="Ramen"><div class="card-body"><h5 class="card-title">Ramen</h5><p><span class="fi fi-jp"></span> Japonsko</p>1. Uvařte vývar (kuřecí, vepřový nebo miso).<br>
+            2. Připravte nudle zvlášť.<br>
+            3. Do misky dejte nudle, vývar, maso, vejce a zeleninu.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/minestrone.jpeg" class="card-img-top" alt="Minestrone"><div class="card-body"><h5 class="card-title">Minestrone</h5><p><span class="fi fi-it"></span> Itálie</p>1. Orestujte cibuli, česnek, mrkev a celer.<br>
+              2. Přidejte vývar, fazole, rajčata a těstoviny.<br>
+              3. Vařte do změknutí, dochuťte bylinkami.</div></div></div>
+      <div class="col"><div class="card h-100 text-center"><img src="images/kulajda.jpg" class="card-img-top" alt="Kulajda"><div class="card-body"><h5 class="card-title">Kulajda</h5><p><span class="fi fi-cz"></span> Česko</p>1. Uvařte brambory a houby ve vývaru.<br>
+              2. Přidejte kopr, smetanu a vajíčko.<br>
+              3. Vařte do zhoustnutí a podávejte s chlebem.</div></div></div>
     </div>
     <h3 class="mt-4">Přehled polévek</h3>
-    <table class="table table-bordered">
-      <thead><tr><th>Název</th><th>Země</th><th>Hodnocení</th></tr></thead>
+    <table class="table table-bordered table table-responsive table-striped" style="border: 1px solid black">
+      <thead class="table-dark"><tr><th>Název</th><th>Země</th><th>Hodnocení</th></tr></thead>
       <tbody>
-        <tr><td>Pho</td><td><span class="flag-icon flag-icon-vn"></span> Vietnam</td><td>★★★★★</td></tr>
-        <tr><td>Tom Yum</td><td><span class="flag-icon flag-icon-th"></span> Thajsko</td><td>★★★★☆</td></tr>
-        <tr><td>Boršč</td><td><span class="flag-icon flag-icon-ua"></span> Ukrajina</td><td>★★★☆☆</td></tr>
-        <tr><td>Ramen</td><td><span class="flag-icon flag-icon-jp"></span> Japonsko</td><td>★★★★★</td></tr>
-        <tr><td>Minestrone</td><td><span class="flag-icon flag-icon-it"></span> Itálie</td><td>★★★★☆</td></tr>
-        <tr><td>Kulajda</td><td><span class="flag-icon flag-icon-cz"></span> Česko</td><td>★★★☆☆</td></tr>
+        <tr><td>Pho</td><td><span class="fi fi-vn"></span> Vietnam</td><td>★★★★★</td></tr>
+        <tr><td>Tom Yum</td><td><span class="fi fi-th"></span> Thajsko</td><td>★★★★☆</td></tr>
+        <tr><td>Boršč</td><td><span class="fi fi-ua"></span> Ukrajina</td><td>★★★☆☆</td></tr>
+        <tr><td>Ramen</td><td><span class="fi fi-jp"></span> Japonsko</td><td>★★★★★</td></tr>
+        <tr><td>Minestrone</td><td><span class="fi fi-it"></span> Itálie</td><td>★★★★☆</td></tr>
+        <tr><td>Kulajda</td><td><span class="fi fi-cz"></span> Česko</td><td>★★★☆☆</td></tr>
       </tbody>
     </table>
   </div>
 
 </div>
 
-
-<div class="tab-content mt-3">
-  <div class="tab-pane fade show active" id="predkrmy">
-    <p>Seznam předkrmů zde…</p>
-  </div>
-  <div class="tab-pane fade" id="hlavni">
-    <p>Seznam hlavních jídel zde…</p>
-  </div>
-  <div class="tab-pane fade" id="dezerty">
-    <p>Seznam dezertů zde…</p>
-  </div>
-  <div class="tab-pane fade" id="polevky">
-  <p>Seznam polévek zde…</p>
-</div>
-</div>
 </main>
 
 <footer class="bg-black text-white text-center py-3 mt-auto">
